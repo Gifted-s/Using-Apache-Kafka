@@ -3,7 +3,7 @@ const kafka = new Kafka({
     clientId:'app-id',
     brokers:['192.168.99.100:9092']  
 })
-const topicName= "createOther"
+const topicName= 'createOrderEvent'
 const process = async ()=>{
    const admin = kafka.admin()
    await  admin.connect()
@@ -16,7 +16,6 @@ const process = async ()=>{
         }
     ]
    })
-   await  admin.disconnect()
 }
 
 process().then(()=> console.log('Kafka Connected'))
