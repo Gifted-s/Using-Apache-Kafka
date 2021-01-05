@@ -1,7 +1,7 @@
 const {Kafka} = require('kafkajs')
 const kafka = new Kafka({
     clientId:'app-id',
-    brokers:['localhost:9092']  
+    brokers:['192.168.99.100:9092']  
 })
 const topicName= "createOther"
 const process = async ()=>{
