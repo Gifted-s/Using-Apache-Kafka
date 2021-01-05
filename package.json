@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Gifted-s/Using-Apache-Kafka/issues"
   },
-  "homepage": "https://github.com/Gifted-s/Using-Apache-Kafka#readme"
+  "homepage": "https://github.com/Gifted-s/Using-Apache-Kafka#readme",
+  "dependencies": {
+    "kafkajs": "^1.15.0"
+  }
 }
